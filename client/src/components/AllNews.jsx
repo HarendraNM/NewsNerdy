@@ -17,7 +17,7 @@ function AllNews() {
   }
   let pageSize = 15;
   useEffect(() => {
-    fetch(`https://news-app-seven-delta.vercel.app/all-news?page=${page}&pageSize=${pageSize}`)
+    fetch(`news-nerdy-backend.vercel.app/all-news?page=${page}&pageSize=${pageSize}`)
       .then(response => {
         if (response.ok) {
           setIsLoading(true)
