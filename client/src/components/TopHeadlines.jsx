@@ -22,7 +22,7 @@ function TopHeadlines() {
   let pageSize = 15;
   useEffect(() => {
     setIsLoading(true); 
-    fetch(`https://news-app-seven-delta.vercel.app/top-headlines?language=en&category=${params.category}&page=${page}&pageSize=${pageSize}`)
+    fetch(`news-nerdy-backend.vercel.app/top-headlines?language=en&category=${params.category}&page=${page}&pageSize=${pageSize}`)
       .then((response) => {
         if (response.ok) {
           return response.clone().json();
