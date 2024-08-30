@@ -18,7 +18,7 @@ function CountryNews() {
   const pageSize = 15;
   useEffect(() => {
     setIsLoading(true); 
-    fetch(`news-nerdy-backend.vercel.app/country/${params.iso}?page=${page}&pageSize=${pageSize}`)
+    fetch(`https://news-nerdy-backend.vercel.app/country/${params.iso}?page=${page}&pageSize=${pageSize}`)
     .then(response=> {
       if(response.ok){
         console.log(response.clone().json());
